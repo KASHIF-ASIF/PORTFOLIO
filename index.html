@@ -16,26 +16,27 @@
 
   <title>M KASHIF</title>
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
     .textsize{
-      font-size: 100%;
+      font-size:100%;
     }
     @media screen and (max-width: 575px) {
       .firstdiv {
         max-width: 48%;
       }
-
+      .textsize{
+        font-size: 100%;
+      }
       .seconddiv {
         max-width: 48%;
       }
     }
     @media screen and (max-width: 330px) {
       .textsize{
-        font-size: small;
-      }
-    }
-    @media screen and (max-width: 285px) {
-      .textsize{
-        font-size:smaller;
+        font-size:2.8vw;
       }
     }
 
@@ -68,29 +69,26 @@
 
 <body>
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width: 99vw; height: 7vh;">
-    <a class="navbar-brand col-8" href="#">IT SPECIALIST</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">IT SPECIALIST</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNavDropdown">
-      <ul class="navbar-nav ">
-        <li class="nav-item active ">
-          <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active ">
-          <a class="nav-link " href="KASHIF CV.pdf" target="_blank">Resume <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="/KASHIF CV.pdf">Resume</a>
         </li>
-        <li class="nav-item active ">
-          <a class="nav-link " style="cursor: pointer;" target="_blank"
-            onclick="location.href='mailto:mr.mkashifasif@gmail.com';">Contact Me <span
-              class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" style="cursor: pointer;" target="_blank"
+          onclick="location.href='mailto:mr.mkashifasif@gmail.com';">Contact Me</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Projects
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Project's
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="OS LAB PROJECT.zip">OS Client-Server Msg</a>
@@ -106,7 +104,7 @@
       <div class="row setheight">
         <div class=" col-sm col-xs col-md lname col-lg firstdiv" style="flex-wrap: nowrap;">
 
-          <p style="text-align:left; font-size: large; visibility: hidden; animation-delay: 2s; " id="imtext"
+          <p style="text-align:left; font-size: medium; visibility: hidden; animation-delay: 2s; " id="imtext"
             class=" w3-center w3-animate-zoom"><b>Hey, I'm</b></p>
           <h1><b style="font-size: 5vw; visibility:hidden; animation-delay: 1s;color: red;" id="imname"
               class="w3-center w3-animate-zoom">MUHAMMAD KASHIF</b></h1>
@@ -133,7 +131,7 @@
 
         <div class="col-sm col-xs col-md col-lg seconddiv">
 
-          <img src="KASHIF_IMAGES.png" class="img-fluid" alt="KASHIF IMAGE">
+          <img src="KASHIF_IMAGES.png" class="img-fluid center" alt="KASHIF IMAGE">
         </div>
       </div>
     </div>
